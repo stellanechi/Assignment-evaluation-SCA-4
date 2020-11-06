@@ -53,3 +53,12 @@ for state in (obj_CRS, obj_ABI):
 state.capital()
 state.language()
 
+
+Sqlite3>>>>>>>>>
+def create_connection(db_file):
+    conn = None
+    try:
+        conn = sqlite3.connect(db_file)
+    except Error as e:
+        print(e)
+    return conn
